@@ -131,5 +131,5 @@ Now let's build a small CMake project which run the official [tensorflow image r
 ## Conclusion
 If you want to integrate tensorflow c++ library to your c++ project, after building tensorflow c++ library successfully according to the above instructions:
 1. Copy all cmake mond `tensorflow_framework`.dules(Eigen_VERSION.cmake, FindEigen.cmake, FindTensorFlow.cmake) in this repository to your own project's `cmake/Modules` directory.
-                                                                                            2. Add your project's `cmake/Modules` directory to `CMAKE_MODULE_PATH` variable.
-                                                                                            3. Link your executable with two more libraries: `tensorflow_cc` a
+2. Add your project's `cmake/Modules` directory to `CMAKE_MODULE_PATH` variable.
+3. Link your executable with two more libraries: `tensorflow_cc` and `tensorflow_framework`
